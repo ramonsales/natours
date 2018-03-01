@@ -1,0 +1,26 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    /*Make all the elements and pseudo-elements inherit the box-sizing
+    property from the body element
+    */
+    box-sizing: inherit;
+}
+
+/* 1rem = 10px */
+html {
+    /* 
+    This way, user can't change the font-size by the browser
+    font-size: 10px;
+    */
+
+    /* In this way he can */
+    //This defines what 1rem is
+    font-size: 62.5%; //62.5% * 16px = 10px;
+}
+
+body {
+    box-sizing: border-box;
+}
